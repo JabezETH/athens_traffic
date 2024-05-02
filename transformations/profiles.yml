@@ -1,0 +1,15 @@
+athens_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: ;
+      dbname: drone_traffic
+      schema: athens_table
+      threads: 1  # Adjust as needed
+      keepalives_idle: 0  # Adjust as needed
+      search_path: your_search_path  # Optional, specify your schema search path
+      ssl: false  # Set to true if your PostgreSQL connection requires SSL
