@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: data_clean
+    columns:
+      - name: speed
+        tests:
+          - not_null
