@@ -43,3 +43,109 @@ Runtime Error
 [0m15:23:13.614060 [debug] [MainThread]: Command `dbt run` failed at 15:23:13.613878 after 0.05 seconds
 [0m15:23:13.614642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e78448a6a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e78448f8a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7848f80090>]}
 [0m15:23:13.615206 [debug] [MainThread]: Flushing usage events
+[0m20:48:44.120544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b10b3f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b107ed50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b107d690>]}
+
+
+============================== 20:48:44.123183 | dee5ef9c-60bb-48b5-bf2f-8d5ba70d5010 ==============================
+[0m20:48:44.123183 [info ] [MainThread]: Running with dbt=1.7.13
+[0m20:48:44.124036 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/jabez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:48:44.124675 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:48:44.125626 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.04065656, "process_user_time": 1.715902, "process_kernel_time": 0.071995, "process_mem_max_rss": "101816", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m20:48:44.126235 [debug] [MainThread]: Command `dbt run` failed at 20:48:44.126080 after 0.04 seconds
+[0m20:48:44.126721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b106e950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b14ca3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74a4b5780110>]}
+[0m20:48:44.127229 [debug] [MainThread]: Flushing usage events
+[0m23:25:12.602222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670f39d290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670e20cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670e223890>]}
+
+
+============================== 23:25:12.605150 | 095d59bb-ebbf-4f13-9dac-fda280f0bcf6 ==============================
+[0m23:25:12.605150 [info ] [MainThread]: Running with dbt=1.7.13
+[0m23:25:12.606030 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/jabez/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:25:12.606673 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:25:12.607796 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.042284656, "process_user_time": 1.686253, "process_kernel_time": 0.075921, "process_mem_max_rss": "102032", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m23:25:12.608605 [debug] [MainThread]: Command `dbt run` failed at 23:25:12.608418 after 0.04 seconds
+[0m23:25:12.609107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670e1f2b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670e1f2bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6712946f50>]}
+[0m23:25:12.609682 [debug] [MainThread]: Flushing usage events
+[0m23:25:22.634336 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m23:25:31.735896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3b6f6e390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3b6f6e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3b6f6d2d0>]}
+
+
+============================== 23:25:31.738405 | d2eb99d1-d417-4190-a29b-d04c4d62017c ==============================
+[0m23:25:31.738405 [info ] [MainThread]: Running with dbt=1.7.13
+[0m23:25:31.739200 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jabez/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:25:31.739853 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:25:31.740816 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.04144533, "process_user_time": 1.638918, "process_kernel_time": 0.11992, "process_mem_max_rss": "101812", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:25:31.741513 [debug] [MainThread]: Command `dbt run` failed at 23:25:31.741310 after 0.04 seconds
+[0m23:25:31.742006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3b6fa82d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3b6f9bf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d3bb7ee410>]}
+[0m23:25:31.742503 [debug] [MainThread]: Flushing usage events
+[0m00:18:57.085105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad89a9710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad9bc0250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad89a9810>]}
+
+
+============================== 00:18:57.087757 | a5188221-ddb5-4490-83d6-968133301e42 ==============================
+[0m00:18:57.087757 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:18:57.088646 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/jabez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:18:57.089467 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:18:57.090507 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.041444354, "process_user_time": 1.65588, "process_kernel_time": 0.111722, "process_mem_max_rss": "102160", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m00:18:57.091303 [debug] [MainThread]: Command `dbt docs generate` failed at 00:18:57.091107 after 0.04 seconds
+[0m00:18:57.091870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad89a2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad89d6dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75bad89ec4d0>]}
+[0m00:18:57.092584 [debug] [MainThread]: Flushing usage events
+[0m18:24:07.973542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c341910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c36f550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c340490>]}
+
+
+============================== 18:24:08.150873 | a27ae5fe-7d46-402c-9617-4ed94b6a74f7 ==============================
+[0m18:24:08.150873 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:24:08.153950 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/jabez/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:24:08.156960 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:24:08.239765 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.35669973, "process_user_time": 3.266728, "process_kernel_time": 0.467255, "process_mem_max_rss": "101292", "process_in_blocks": "88632", "process_out_blocks": "8", "command_success": false}
+[0m18:24:08.240774 [debug] [MainThread]: Command `dbt docs generate` failed at 18:24:08.240556 after 0.36 seconds
+[0m18:24:08.241347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c782850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c329e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d354c32b650>]}
+[0m18:24:08.241903 [debug] [MainThread]: Flushing usage events
+[0m20:07:37.259425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729873a8eb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729873d71590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729873a8ec10>]}
+
+
+============================== 20:07:37.503725 | 19580235-f859-4b24-902f-ec714b14d73c ==============================
+[0m20:07:37.503725 [info ] [MainThread]: Running with dbt=1.7.13
+[0m20:07:37.506376 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/jabez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:07:37.508816 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:07:37.512444 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.37822852, "process_user_time": 2.515153, "process_kernel_time": 0.18226, "process_mem_max_rss": "101836", "process_in_blocks": "45464", "process_out_blocks": "16", "command_success": false}
+[0m20:07:37.515040 [debug] [MainThread]: Command `dbt run` failed at 20:07:37.514301 after 0.38 seconds
+[0m20:07:37.517515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729873a94bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729873ae0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x729878180090>]}
+[0m20:07:37.519778 [debug] [MainThread]: Flushing usage events
+[0m00:35:14.125914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212edb7a2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212edb7a590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212edb6a750>]}
+
+
+============================== 00:35:14.128350 | e1c932db-297f-4e7b-ba2a-80fce51966fe ==============================
+[0m00:35:14.128350 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:35:14.129083 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jabez/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:35:14.129664 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jabez/Documents/athens_traffic/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:35:14.130556 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.047322534, "process_user_time": 1.913194, "process_kernel_time": 0.099853, "process_mem_max_rss": "101908", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m00:35:14.131159 [debug] [MainThread]: Command `dbt run` failed at 00:35:14.130988 after 0.05 seconds
+[0m00:35:14.131723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212edb71dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212edb72cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7212f22840d0>]}
+[0m00:35:14.132258 [debug] [MainThread]: Flushing usage events
