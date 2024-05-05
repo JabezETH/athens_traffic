@@ -1,34 +1,3 @@
-# athens_traffic
-
-# Project Title: Data Engineering: Data warehouse tech stack with PostgreSQL, DBT, Airflow
-
-## Description 
-The objective of this project is to create a scalable data warehouse that will host vehicle
-trajectory data extracted by analyzing footage taken by swarm drones and static roadside cameras.
-The data is taken from Athens, Greek. This project is done on location 1, on 24/10/2018.
-
-## Table of Contents:
-- Features
-- Installation
-- Usage
-
-## Features 
-- Extract trajectory data from Postgres
-- Airflow orchestration for data extraction and transformation
-- Transform data including data cleaning, vehicle speed  summary, vehicle type summary, and each vehicle type trajectory data.
-- dbt singular test
-- dbt documentation generation
-
-## Installation
-- Install Python
-- Intall Postgres
-- Install Airflow
-- Install dbt
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
 
 
@@ -66,7 +35,6 @@ The data is taken from Athens, Greek. This project is done on location 1, on 24/
 
 <!-- Features-->
 ## Features
-https://jabezeth.github.io/athens_traffic/#!/overview
 * Extract trajectory data from Postgres
 * Airflow orchestration for data extraction and transformation
 * Transform data including data cleaning, vehicle speed  summary, vehicle type summary, and each vehicle type trajectory data.
@@ -100,7 +68,6 @@ https://jabezeth.github.io/athens_traffic/#!/overview
 
 <!-- dbt_doc_link -->
 ## dbt_doc_link
-
-<p align="right">(<a href="ttps://jabezeth.github.io/athens_traffic/#!/overview>dbt_doc</a>)</p>
+https://jabezeth.github.io/athens_traffic/#!/overview><a>dbt_doc_url</a>
 
 
