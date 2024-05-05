@@ -38949,3 +38949,1371 @@ with relation as (
 [0m02:14:07.273280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jabez/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/jabez/Documents/athens_traffic/transformations/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt docs serve --port 8002', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
 [0m02:14:07.475817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '32df7b66-5c9c-4428-ab9f-c886e3e0c35a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6fd5d81010>]}
 [0m02:14:07.561507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '32df7b66-5c9c-4428-ab9f-c886e3e0c35a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6fd5d75710>]}
+[0m03:00:19.148924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac432e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac433150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac433b10>]}
+
+
+============================== 03:00:19.151332 | b64743c1-c26e-413d-8c62-c236cbd91817 ==============================
+[0m03:00:19.151332 [info ] [MainThread]: Running with dbt=1.7.13
+[0m03:00:19.152151 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/jabez/Documents/athens_traffic/transformations/logs', 'version_check': 'True', 'profiles_dir': '/home/jabez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m03:00:19.307426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac1810d0>]}
+[0m03:00:19.380697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ada7b6d0>]}
+[0m03:00:19.381484 [info ] [MainThread]: Registered adapter: postgres=1.7.13
+[0m03:00:19.387271 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m03:00:19.424039 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:00:19.424538 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:00:19.429508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac02a490>]}
+[0m03:00:19.441644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abf2b650>]}
+[0m03:00:19.442314 [info ] [MainThread]: Found 10 models, 1 test, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:00:19.442804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac038b10>]}
+[0m03:00:19.444399 [info ] [MainThread]: 
+[0m03:00:19.445209 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m03:00:19.446701 [debug] [ThreadPool]: Acquiring new postgres connection 'list_drone_traffic'
+[0m03:00:19.455370 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic"
+[0m03:00:19.455851 [debug] [ThreadPool]: On list_drone_traffic: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "list_drone_traffic"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m03:00:19.456313 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:00:19.467059 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m03:00:19.468461 [debug] [ThreadPool]: On list_drone_traffic: Close
+[0m03:00:19.470606 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_drone_traffic, now list_drone_traffic_athens_table)
+[0m03:00:19.476096 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:19.476548 [debug] [ThreadPool]: On list_drone_traffic_athens_table: BEGIN
+[0m03:00:19.476937 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:00:19.486329 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:19.486791 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:19.487267 [debug] [ThreadPool]: On list_drone_traffic_athens_table: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "list_drone_traffic_athens_table"} */
+select
+      'drone_traffic' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'athens_table'
+  
+[0m03:00:19.490008 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.0 seconds
+[0m03:00:19.491458 [debug] [ThreadPool]: On list_drone_traffic_athens_table: ROLLBACK
+[0m03:00:19.492061 [debug] [ThreadPool]: On list_drone_traffic_athens_table: Close
+[0m03:00:19.498807 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:19.499303 [debug] [MainThread]: On master: BEGIN
+[0m03:00:19.499682 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:00:19.509243 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:19.509705 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:19.510182 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:00:19.525796 [debug] [MainThread]: SQL status: SELECT 9 in 0.0 seconds
+[0m03:00:19.528924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac0b8750>]}
+[0m03:00:19.529415 [debug] [MainThread]: On master: ROLLBACK
+[0m03:00:19.530015 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:19.530416 [debug] [MainThread]: On master: BEGIN
+[0m03:00:19.531168 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:19.531586 [debug] [MainThread]: On master: COMMIT
+[0m03:00:19.531976 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:19.532356 [debug] [MainThread]: On master: COMMIT
+[0m03:00:19.532921 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:19.533330 [debug] [MainThread]: On master: Close
+[0m03:00:19.534195 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:00:19.534670 [info ] [MainThread]: 
+[0m03:00:19.536850 [debug] [Thread-1 (]: Began running node model.athens_dbt.data_clean
+[0m03:00:19.537419 [info ] [Thread-1 (]: 1 of 10 START sql view model athens_table.data_clean ........................... [RUN]
+[0m03:00:19.538171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_drone_traffic_athens_table, now model.athens_dbt.data_clean)
+[0m03:00:19.538630 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.data_clean
+[0m03:00:19.544303 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.data_clean"
+[0m03:00:19.545009 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (compile): 03:00:19.538922 => 03:00:19.544743
+[0m03:00:19.545481 [debug] [Thread-1 (]: Began executing node model.athens_dbt.data_clean
+[0m03:00:19.574916 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.data_clean"
+[0m03:00:19.575726 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:19.576193 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: BEGIN
+[0m03:00:19.576675 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:19.585936 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:19.586476 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:19.586961 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.data_clean"} */
+
+  create view "drone_traffic"."athens_table"."data_clean__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM athens_table
+WHERE track_id IS NOT NULL
+AND type_veh IS NOT NULL
+AND traveled_d IS NOT NULL
+AND avg_speed IS NOT NULL
+AND lat IS NOT NULL
+AND lon IS NOT NULL
+AND speed IS NOT NULL
+AND lon_acc IS NOT NULL
+AND lat_acc IS NOT NULL
+AND time IS NOT NULL
+  );
+[0m03:00:19.588830 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:19.594233 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:19.594732 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.data_clean"} */
+alter table "drone_traffic"."athens_table"."data_clean" rename to "data_clean__dbt_backup"
+[0m03:00:19.595614 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:19.598427 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:19.598901 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.data_clean"} */
+alter table "drone_traffic"."athens_table"."data_clean__dbt_tmp" rename to "data_clean"
+[0m03:00:19.599770 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:19.613351 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: COMMIT
+[0m03:00:19.613872 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:19.614338 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: COMMIT
+[0m03:00:20.607571 [debug] [Thread-1 (]: SQL status: COMMIT in 1.0 seconds
+[0m03:00:20.630337 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."data_clean__dbt_backup"
+[0m03:00:20.645731 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.data_clean"
+[0m03:00:20.646762 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.data_clean"} */
+drop view if exists "drone_traffic"."athens_table"."data_clean__dbt_backup" cascade
+[0m03:00:20.678314 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:20.680043 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (execute): 03:00:19.545767 => 03:00:20.679802
+[0m03:00:20.680513 [debug] [Thread-1 (]: On model.athens_dbt.data_clean: Close
+[0m03:00:20.681468 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac0c3190>]}
+[0m03:00:20.682173 [info ] [Thread-1 (]: 1 of 10 OK created sql view model athens_table.data_clean ...................... [[32mCREATE VIEW[0m in 1.14s]
+[0m03:00:20.682883 [debug] [Thread-1 (]: Finished running node model.athens_dbt.data_clean
+[0m03:00:20.684179 [debug] [Thread-1 (]: Began running node model.athens_dbt.bus
+[0m03:00:20.684729 [info ] [Thread-1 (]: 2 of 10 START sql view model athens_table.bus .................................. [RUN]
+[0m03:00:20.685571 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.data_clean, now model.athens_dbt.bus)
+[0m03:00:20.686098 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.bus
+[0m03:00:20.688828 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.bus"
+[0m03:00:20.689556 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (compile): 03:00:20.686405 => 03:00:20.689301
+[0m03:00:20.690008 [debug] [Thread-1 (]: Began executing node model.athens_dbt.bus
+[0m03:00:20.694301 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.bus"
+[0m03:00:20.694932 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.bus"
+[0m03:00:20.695428 [debug] [Thread-1 (]: On model.athens_dbt.bus: BEGIN
+[0m03:00:20.695856 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:20.705679 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:20.706193 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.bus"
+[0m03:00:20.706645 [debug] [Thread-1 (]: On model.athens_dbt.bus: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.bus"} */
+
+  create view "drone_traffic"."athens_table"."bus__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Bus%'
+  );
+[0m03:00:20.708561 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:20.711705 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.bus"
+[0m03:00:20.712171 [debug] [Thread-1 (]: On model.athens_dbt.bus: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.bus"} */
+alter table "drone_traffic"."athens_table"."bus__dbt_tmp" rename to "bus"
+[0m03:00:20.712962 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:20.714710 [debug] [Thread-1 (]: On model.athens_dbt.bus: COMMIT
+[0m03:00:20.715208 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.bus"
+[0m03:00:20.715649 [debug] [Thread-1 (]: On model.athens_dbt.bus: COMMIT
+[0m03:00:20.739488 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:20.742418 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."bus__dbt_backup"
+[0m03:00:20.743573 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.bus"
+[0m03:00:20.744070 [debug] [Thread-1 (]: On model.athens_dbt.bus: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.bus"} */
+drop view if exists "drone_traffic"."athens_table"."bus__dbt_backup" cascade
+[0m03:00:20.744847 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:20.746410 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (execute): 03:00:20.690299 => 03:00:20.746148
+[0m03:00:20.746911 [debug] [Thread-1 (]: On model.athens_dbt.bus: Close
+[0m03:00:20.747878 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abebb490>]}
+[0m03:00:20.748595 [info ] [Thread-1 (]: 2 of 10 OK created sql view model athens_table.bus ............................. [[32mCREATE VIEW[0m in 0.06s]
+[0m03:00:20.749337 [debug] [Thread-1 (]: Finished running node model.athens_dbt.bus
+[0m03:00:20.749904 [debug] [Thread-1 (]: Began running node model.athens_dbt.cars
+[0m03:00:20.750489 [info ] [Thread-1 (]: 3 of 10 START sql view model athens_table.cars ................................. [RUN]
+[0m03:00:20.751304 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.bus, now model.athens_dbt.cars)
+[0m03:00:20.751811 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.cars
+[0m03:00:20.754575 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.cars"
+[0m03:00:20.755410 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (compile): 03:00:20.752133 => 03:00:20.755107
+[0m03:00:20.755912 [debug] [Thread-1 (]: Began executing node model.athens_dbt.cars
+[0m03:00:20.761605 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.cars"
+[0m03:00:20.762322 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.cars"
+[0m03:00:20.762825 [debug] [Thread-1 (]: On model.athens_dbt.cars: BEGIN
+[0m03:00:20.763335 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:20.772959 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:20.773483 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.cars"
+[0m03:00:20.773960 [debug] [Thread-1 (]: On model.athens_dbt.cars: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.cars"} */
+
+  create view "drone_traffic"."athens_table"."cars__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Car%'
+  );
+[0m03:00:20.775795 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:20.778634 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.cars"
+[0m03:00:20.779094 [debug] [Thread-1 (]: On model.athens_dbt.cars: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.cars"} */
+alter table "drone_traffic"."athens_table"."cars__dbt_tmp" rename to "cars"
+[0m03:00:20.779974 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:20.781662 [debug] [Thread-1 (]: On model.athens_dbt.cars: COMMIT
+[0m03:00:20.782125 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.cars"
+[0m03:00:20.782571 [debug] [Thread-1 (]: On model.athens_dbt.cars: COMMIT
+[0m03:00:20.810944 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:20.813678 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."cars__dbt_backup"
+[0m03:00:20.814738 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.cars"
+[0m03:00:20.815241 [debug] [Thread-1 (]: On model.athens_dbt.cars: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.cars"} */
+drop view if exists "drone_traffic"."athens_table"."cars__dbt_backup" cascade
+[0m03:00:20.815983 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:20.817421 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (execute): 03:00:20.756229 => 03:00:20.817178
+[0m03:00:20.817888 [debug] [Thread-1 (]: On model.athens_dbt.cars: Close
+[0m03:00:20.818763 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abd73290>]}
+[0m03:00:20.819470 [info ] [Thread-1 (]: 3 of 10 OK created sql view model athens_table.cars ............................ [[32mCREATE VIEW[0m in 0.07s]
+[0m03:00:20.820145 [debug] [Thread-1 (]: Finished running node model.athens_dbt.cars
+[0m03:00:20.820703 [debug] [Thread-1 (]: Began running node model.athens_dbt.heavy_veh
+[0m03:00:20.821236 [info ] [Thread-1 (]: 4 of 10 START sql view model athens_table.heavy_veh ............................ [RUN]
+[0m03:00:20.821969 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.cars, now model.athens_dbt.heavy_veh)
+[0m03:00:20.822433 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.heavy_veh
+[0m03:00:20.825012 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.heavy_veh"
+[0m03:00:20.825832 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (compile): 03:00:20.822728 => 03:00:20.825556
+[0m03:00:20.826298 [debug] [Thread-1 (]: Began executing node model.athens_dbt.heavy_veh
+[0m03:00:20.830469 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.heavy_veh"
+[0m03:00:20.831182 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.heavy_veh"
+[0m03:00:20.831644 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: BEGIN
+[0m03:00:20.832095 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:20.841909 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:20.842444 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.heavy_veh"
+[0m03:00:20.842913 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.heavy_veh"} */
+
+  create view "drone_traffic"."athens_table"."heavy_veh__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Heavy Vehicle%'
+  );
+[0m03:00:20.844872 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:20.848065 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.heavy_veh"
+[0m03:00:20.848545 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.heavy_veh"} */
+alter table "drone_traffic"."athens_table"."heavy_veh__dbt_tmp" rename to "heavy_veh"
+[0m03:00:20.849426 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:20.851250 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: COMMIT
+[0m03:00:20.851708 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.heavy_veh"
+[0m03:00:20.852150 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: COMMIT
+[0m03:00:20.871955 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:20.875083 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."heavy_veh__dbt_backup"
+[0m03:00:20.876361 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.heavy_veh"
+[0m03:00:20.876944 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.heavy_veh"} */
+drop view if exists "drone_traffic"."athens_table"."heavy_veh__dbt_backup" cascade
+[0m03:00:20.877782 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:20.879337 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (execute): 03:00:20.826592 => 03:00:20.879034
+[0m03:00:20.879802 [debug] [Thread-1 (]: On model.athens_dbt.heavy_veh: Close
+[0m03:00:20.880701 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abd63250>]}
+[0m03:00:20.881388 [info ] [Thread-1 (]: 4 of 10 OK created sql view model athens_table.heavy_veh ....................... [[32mCREATE VIEW[0m in 0.06s]
+[0m03:00:20.882086 [debug] [Thread-1 (]: Finished running node model.athens_dbt.heavy_veh
+[0m03:00:20.882643 [debug] [Thread-1 (]: Began running node model.athens_dbt.medium_veh
+[0m03:00:20.883223 [info ] [Thread-1 (]: 5 of 10 START sql view model athens_table.medium_veh ........................... [RUN]
+[0m03:00:20.884261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.heavy_veh, now model.athens_dbt.medium_veh)
+[0m03:00:20.884921 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.medium_veh
+[0m03:00:20.887695 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.medium_veh"
+[0m03:00:20.888776 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (compile): 03:00:20.885230 => 03:00:20.888421
+[0m03:00:20.889253 [debug] [Thread-1 (]: Began executing node model.athens_dbt.medium_veh
+[0m03:00:20.893607 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.medium_veh"
+[0m03:00:20.894230 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.medium_veh"
+[0m03:00:20.894683 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: BEGIN
+[0m03:00:20.895109 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:20.905011 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:20.905521 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.medium_veh"
+[0m03:00:20.905968 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.medium_veh"} */
+
+  create view "drone_traffic"."athens_table"."medium_veh__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Medium Vehicle%'
+  );
+[0m03:00:20.907884 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:20.910971 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.medium_veh"
+[0m03:00:20.911498 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.medium_veh"} */
+alter table "drone_traffic"."athens_table"."medium_veh__dbt_tmp" rename to "medium_veh"
+[0m03:00:20.912295 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:20.914026 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: COMMIT
+[0m03:00:20.914504 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.medium_veh"
+[0m03:00:20.914938 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: COMMIT
+[0m03:00:20.932653 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:20.935488 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."medium_veh__dbt_backup"
+[0m03:00:20.936627 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.medium_veh"
+[0m03:00:20.937084 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.medium_veh"} */
+drop view if exists "drone_traffic"."athens_table"."medium_veh__dbt_backup" cascade
+[0m03:00:20.937817 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:20.939313 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (execute): 03:00:20.889542 => 03:00:20.939024
+[0m03:00:20.939775 [debug] [Thread-1 (]: On model.athens_dbt.medium_veh: Close
+[0m03:00:20.940674 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abd36550>]}
+[0m03:00:20.941318 [info ] [Thread-1 (]: 5 of 10 OK created sql view model athens_table.medium_veh ...................... [[32mCREATE VIEW[0m in 0.06s]
+[0m03:00:20.942011 [debug] [Thread-1 (]: Finished running node model.athens_dbt.medium_veh
+[0m03:00:20.942565 [debug] [Thread-1 (]: Began running node model.athens_dbt.motorcycle
+[0m03:00:20.943082 [info ] [Thread-1 (]: 6 of 10 START sql view model athens_table.motorcycle ........................... [RUN]
+[0m03:00:20.943910 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.medium_veh, now model.athens_dbt.motorcycle)
+[0m03:00:20.944367 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.motorcycle
+[0m03:00:20.946890 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.motorcycle"
+[0m03:00:20.947709 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (compile): 03:00:20.944657 => 03:00:20.947454
+[0m03:00:20.948172 [debug] [Thread-1 (]: Began executing node model.athens_dbt.motorcycle
+[0m03:00:20.953712 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.motorcycle"
+[0m03:00:20.954371 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.motorcycle"
+[0m03:00:20.954866 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: BEGIN
+[0m03:00:20.955360 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:20.964753 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:20.965272 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.motorcycle"
+[0m03:00:20.965725 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.motorcycle"} */
+
+  create view "drone_traffic"."athens_table"."motorcycle__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Motorcycle%'
+  );
+[0m03:00:20.967607 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:21.008366 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.motorcycle"
+[0m03:00:21.008885 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.motorcycle"} */
+alter table "drone_traffic"."athens_table"."motorcycle__dbt_tmp" rename to "motorcycle"
+[0m03:00:21.009717 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.011533 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: COMMIT
+[0m03:00:21.012020 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.motorcycle"
+[0m03:00:21.012455 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: COMMIT
+[0m03:00:21.037890 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.040641 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."motorcycle__dbt_backup"
+[0m03:00:21.041699 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.motorcycle"
+[0m03:00:21.042149 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.motorcycle"} */
+drop view if exists "drone_traffic"."athens_table"."motorcycle__dbt_backup" cascade
+[0m03:00:21.042880 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:21.044331 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (execute): 03:00:20.948462 => 03:00:21.044088
+[0m03:00:21.044786 [debug] [Thread-1 (]: On model.athens_dbt.motorcycle: Close
+[0m03:00:21.045715 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1ac079d50>]}
+[0m03:00:21.046378 [info ] [Thread-1 (]: 6 of 10 OK created sql view model athens_table.motorcycle ...................... [[32mCREATE VIEW[0m in 0.10s]
+[0m03:00:21.047120 [debug] [Thread-1 (]: Finished running node model.athens_dbt.motorcycle
+[0m03:00:21.047697 [debug] [Thread-1 (]: Began running node model.athens_dbt.stopped_veh
+[0m03:00:21.048282 [info ] [Thread-1 (]: 7 of 10 START sql table model athens_table.stopped_veh ......................... [RUN]
+[0m03:00:21.049005 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.motorcycle, now model.athens_dbt.stopped_veh)
+[0m03:00:21.049462 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.stopped_veh
+[0m03:00:21.052205 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.stopped_veh"
+[0m03:00:21.052889 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (compile): 03:00:21.049750 => 03:00:21.052639
+[0m03:00:21.053340 [debug] [Thread-1 (]: Began executing node model.athens_dbt.stopped_veh
+[0m03:00:21.072103 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.stopped_veh"
+[0m03:00:21.072787 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.073240 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: BEGIN
+[0m03:00:21.073678 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:21.083264 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:21.083787 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.084252 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.stopped_veh"} */
+
+  
+    
+
+  create  table "drone_traffic"."athens_table"."stopped_veh__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT type_veh, COUNT(*) AS stopped_vehicles
+
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE speed = 0
+GROUP BY type_veh
+  );
+  
+[0m03:00:21.086656 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.0 seconds
+[0m03:00:21.089563 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.090033 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.stopped_veh"} */
+alter table "drone_traffic"."athens_table"."stopped_veh" rename to "stopped_veh__dbt_backup"
+[0m03:00:21.090817 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.093625 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.094094 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.stopped_veh"} */
+alter table "drone_traffic"."athens_table"."stopped_veh__dbt_tmp" rename to "stopped_veh"
+[0m03:00:21.094851 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.099934 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: COMMIT
+[0m03:00:21.100418 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.100862 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: COMMIT
+[0m03:00:21.107366 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.109995 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."stopped_veh__dbt_backup"
+[0m03:00:21.113272 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.stopped_veh"
+[0m03:00:21.113778 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.stopped_veh"} */
+drop table if exists "drone_traffic"."athens_table"."stopped_veh__dbt_backup" cascade
+[0m03:00:21.117667 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m03:00:21.119312 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (execute): 03:00:21.053625 => 03:00:21.119004
+[0m03:00:21.119778 [debug] [Thread-1 (]: On model.athens_dbt.stopped_veh: Close
+[0m03:00:21.120979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abda8690>]}
+[0m03:00:21.122290 [info ] [Thread-1 (]: 7 of 10 OK created sql table model athens_table.stopped_veh .................... [[32mSELECT 6[0m in 0.07s]
+[0m03:00:21.123591 [debug] [Thread-1 (]: Finished running node model.athens_dbt.stopped_veh
+[0m03:00:21.124118 [debug] [Thread-1 (]: Began running node model.athens_dbt.taxi
+[0m03:00:21.124704 [info ] [Thread-1 (]: 8 of 10 START sql view model athens_table.taxi ................................. [RUN]
+[0m03:00:21.125451 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.stopped_veh, now model.athens_dbt.taxi)
+[0m03:00:21.125983 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.taxi
+[0m03:00:21.128487 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.taxi"
+[0m03:00:21.129177 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (compile): 03:00:21.126271 => 03:00:21.128922
+[0m03:00:21.129663 [debug] [Thread-1 (]: Began executing node model.athens_dbt.taxi
+[0m03:00:21.133639 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.taxi"
+[0m03:00:21.134322 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.taxi"
+[0m03:00:21.134806 [debug] [Thread-1 (]: On model.athens_dbt.taxi: BEGIN
+[0m03:00:21.135301 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:21.144742 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:21.145254 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.taxi"
+[0m03:00:21.145706 [debug] [Thread-1 (]: On model.athens_dbt.taxi: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.taxi"} */
+
+  create view "drone_traffic"."athens_table"."taxi__dbt_tmp"
+    
+    
+  as (
+    SELECT *
+FROM "drone_traffic"."athens_table"."data_clean"
+WHERE type_veh LIKE '%Taxi%'
+  );
+[0m03:00:21.147557 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:21.150387 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.taxi"
+[0m03:00:21.150848 [debug] [Thread-1 (]: On model.athens_dbt.taxi: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.taxi"} */
+alter table "drone_traffic"."athens_table"."taxi__dbt_tmp" rename to "taxi"
+[0m03:00:21.151659 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.153315 [debug] [Thread-1 (]: On model.athens_dbt.taxi: COMMIT
+[0m03:00:21.153766 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.taxi"
+[0m03:00:21.154295 [debug] [Thread-1 (]: On model.athens_dbt.taxi: COMMIT
+[0m03:00:21.158073 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.161816 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."taxi__dbt_backup"
+[0m03:00:21.162838 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.taxi"
+[0m03:00:21.163360 [debug] [Thread-1 (]: On model.athens_dbt.taxi: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.taxi"} */
+drop view if exists "drone_traffic"."athens_table"."taxi__dbt_backup" cascade
+[0m03:00:21.164099 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:21.165465 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (execute): 03:00:21.129965 => 03:00:21.165249
+[0m03:00:21.165933 [debug] [Thread-1 (]: On model.athens_dbt.taxi: Close
+[0m03:00:21.166794 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abd636d0>]}
+[0m03:00:21.167524 [info ] [Thread-1 (]: 8 of 10 OK created sql view model athens_table.taxi ............................ [[32mCREATE VIEW[0m in 0.04s]
+[0m03:00:21.168213 [debug] [Thread-1 (]: Finished running node model.athens_dbt.taxi
+[0m03:00:21.168811 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_speed
+[0m03:00:21.169356 [info ] [Thread-1 (]: 9 of 10 START sql view model athens_table.veh_speed ............................ [RUN]
+[0m03:00:21.170255 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.taxi, now model.athens_dbt.veh_speed)
+[0m03:00:21.170715 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_speed
+[0m03:00:21.173238 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_speed"
+[0m03:00:21.173924 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (compile): 03:00:21.170999 => 03:00:21.173667
+[0m03:00:21.174398 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_speed
+[0m03:00:21.178535 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.veh_speed"
+[0m03:00:21.179185 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_speed"
+[0m03:00:21.179645 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: BEGIN
+[0m03:00:21.180076 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:21.190274 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:21.190827 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_speed"
+[0m03:00:21.191327 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_speed"} */
+
+  create view "drone_traffic"."athens_table"."veh_speed__dbt_tmp"
+    
+    
+  as (
+    SELECT AVG (speed) AS average_speed,
+       MIN (speed) As lowest_speed,
+       MAX (speed) As highest_speed
+FROM "drone_traffic"."athens_table"."data_clean"
+  );
+[0m03:00:21.193104 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:21.196217 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_speed"
+[0m03:00:21.196708 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_speed"} */
+alter table "drone_traffic"."athens_table"."veh_speed__dbt_tmp" rename to "veh_speed"
+[0m03:00:21.197550 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.199353 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: COMMIT
+[0m03:00:21.199827 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_speed"
+[0m03:00:21.200286 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: COMMIT
+[0m03:00:21.203723 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.206304 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."veh_speed__dbt_backup"
+[0m03:00:21.207388 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_speed"
+[0m03:00:21.207869 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_speed"} */
+drop view if exists "drone_traffic"."athens_table"."veh_speed__dbt_backup" cascade
+[0m03:00:21.208599 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:21.210058 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (execute): 03:00:21.174676 => 03:00:21.209810
+[0m03:00:21.210535 [debug] [Thread-1 (]: On model.athens_dbt.veh_speed: Close
+[0m03:00:21.211496 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abd60a50>]}
+[0m03:00:21.212176 [info ] [Thread-1 (]: 9 of 10 OK created sql view model athens_table.veh_speed ....................... [[32mCREATE VIEW[0m in 0.04s]
+[0m03:00:21.212867 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_speed
+[0m03:00:21.213398 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_type
+[0m03:00:21.214087 [info ] [Thread-1 (]: 10 of 10 START sql view model athens_table.veh_type ............................ [RUN]
+[0m03:00:21.214842 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.veh_speed, now model.athens_dbt.veh_type)
+[0m03:00:21.215379 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_type
+[0m03:00:21.217785 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_type"
+[0m03:00:21.218474 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (compile): 03:00:21.215669 => 03:00:21.218212
+[0m03:00:21.219005 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_type
+[0m03:00:21.223017 [debug] [Thread-1 (]: Writing runtime sql for node "model.athens_dbt.veh_type"
+[0m03:00:21.223718 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_type"
+[0m03:00:21.224237 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: BEGIN
+[0m03:00:21.224673 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:21.234006 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:21.234537 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_type"
+[0m03:00:21.235007 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_type"} */
+
+  create view "drone_traffic"."athens_table"."veh_type__dbt_tmp"
+    
+    
+  as (
+    SELECT type_veh, COUNT(*) AS vehicle_count
+FROM "drone_traffic"."athens_table"."data_clean"
+GROUP BY type_veh
+  );
+[0m03:00:21.236815 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m03:00:21.239742 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_type"
+[0m03:00:21.240219 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_type"} */
+alter table "drone_traffic"."athens_table"."veh_type__dbt_tmp" rename to "veh_type"
+[0m03:00:21.240991 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m03:00:21.242615 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: COMMIT
+[0m03:00:21.243070 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_type"
+[0m03:00:21.243584 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: COMMIT
+[0m03:00:21.246568 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.249101 [debug] [Thread-1 (]: Applying DROP to: "drone_traffic"."athens_table"."veh_type__dbt_backup"
+[0m03:00:21.250094 [debug] [Thread-1 (]: Using postgres connection "model.athens_dbt.veh_type"
+[0m03:00:21.250558 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "model.athens_dbt.veh_type"} */
+drop view if exists "drone_traffic"."athens_table"."veh_type__dbt_backup" cascade
+[0m03:00:21.251297 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m03:00:21.252635 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (execute): 03:00:21.219348 => 03:00:21.252415
+[0m03:00:21.253101 [debug] [Thread-1 (]: On model.athens_dbt.veh_type: Close
+[0m03:00:21.254000 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b64743c1-c26e-413d-8c62-c236cbd91817', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1abeaeb90>]}
+[0m03:00:21.254675 [info ] [Thread-1 (]: 10 of 10 OK created sql view model athens_table.veh_type ....................... [[32mCREATE VIEW[0m in 0.04s]
+[0m03:00:21.255418 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_type
+[0m03:00:21.257075 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:21.257532 [debug] [MainThread]: On master: BEGIN
+[0m03:00:21.257949 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:00:21.267598 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:21.268098 [debug] [MainThread]: On master: COMMIT
+[0m03:00:21.268604 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:21.269006 [debug] [MainThread]: On master: COMMIT
+[0m03:00:21.269589 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:21.270012 [debug] [MainThread]: On master: Close
+[0m03:00:21.270890 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:00:21.271359 [debug] [MainThread]: Connection 'model.athens_dbt.veh_type' was properly closed.
+[0m03:00:21.271854 [info ] [MainThread]: 
+[0m03:00:21.272303 [info ] [MainThread]: Finished running 9 view models, 1 table model in 0 hours 0 minutes and 1.83 seconds (1.83s).
+[0m03:00:21.274177 [debug] [MainThread]: Command end result
+[0m03:00:21.282305 [info ] [MainThread]: 
+[0m03:00:21.282986 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:00:21.283510 [info ] [MainThread]: 
+[0m03:00:21.283992 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m03:00:21.284843 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.169558, "process_user_time": 2.338705, "process_kernel_time": 0.126845, "process_mem_max_rss": "147380", "process_out_blocks": "1904", "process_in_blocks": "0"}
+[0m03:00:21.285418 [debug] [MainThread]: Command `dbt run` succeeded at 03:00:21.285270 after 2.17 seconds
+[0m03:00:21.285870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1b0ca8e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1b0b80490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc1b0b80510>]}
+[0m03:00:21.286324 [debug] [MainThread]: Flushing usage events
+[0m03:00:30.424555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd531fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcde6a1410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd512e90>]}
+
+
+============================== 03:00:30.426978 | 8242647e-6a8e-4a18-b9f8-a7a590b13396 ==============================
+[0m03:00:30.426978 [info ] [MainThread]: Running with dbt=1.7.13
+[0m03:00:30.427783 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jabez/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/jabez/Documents/athens_traffic/transformations/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m03:00:30.579822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd254c10>]}
+[0m03:00:30.652815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd574250>]}
+[0m03:00:30.653610 [info ] [MainThread]: Registered adapter: postgres=1.7.13
+[0m03:00:30.659562 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m03:00:30.696532 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:00:30.697011 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:00:30.701973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd0c8950>]}
+[0m03:00:30.714086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdcfef050>]}
+[0m03:00:30.714659 [info ] [MainThread]: Found 10 models, 1 test, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:00:30.715175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd16ff10>]}
+[0m03:00:30.716532 [info ] [MainThread]: 
+[0m03:00:30.717338 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m03:00:30.718888 [debug] [ThreadPool]: Acquiring new postgres connection 'list_drone_traffic_athens_table'
+[0m03:00:30.728123 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:30.728592 [debug] [ThreadPool]: On list_drone_traffic_athens_table: BEGIN
+[0m03:00:30.729005 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:00:30.739269 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:30.739756 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:30.740196 [debug] [ThreadPool]: On list_drone_traffic_athens_table: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "list_drone_traffic_athens_table"} */
+select
+      'drone_traffic' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'athens_table'
+  
+[0m03:00:30.742866 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.0 seconds
+[0m03:00:30.744327 [debug] [ThreadPool]: On list_drone_traffic_athens_table: ROLLBACK
+[0m03:00:30.744936 [debug] [ThreadPool]: On list_drone_traffic_athens_table: Close
+[0m03:00:30.753023 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.753490 [debug] [MainThread]: On master: BEGIN
+[0m03:00:30.753903 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:00:30.763367 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:30.763854 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.764381 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:00:30.780042 [debug] [MainThread]: SQL status: SELECT 9 in 0.0 seconds
+[0m03:00:30.783275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8242647e-6a8e-4a18-b9f8-a7a590b13396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbce0649a90>]}
+[0m03:00:30.783795 [debug] [MainThread]: On master: ROLLBACK
+[0m03:00:30.784420 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.784840 [debug] [MainThread]: On master: BEGIN
+[0m03:00:30.785620 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:30.786056 [debug] [MainThread]: On master: COMMIT
+[0m03:00:30.786478 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.786880 [debug] [MainThread]: On master: COMMIT
+[0m03:00:30.787559 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:30.788000 [debug] [MainThread]: On master: Close
+[0m03:00:30.788892 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:00:30.789392 [info ] [MainThread]: 
+[0m03:00:30.791563 [debug] [Thread-1 (]: Began running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:30.792057 [info ] [Thread-1 (]: 1 of 1 START test not_null_data_clean_speed .................................... [RUN]
+[0m03:00:30.792813 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_drone_traffic_athens_table, now test.athens_dbt.not_null_data_clean_speed.6420e7ff73)
+[0m03:00:30.793287 [debug] [Thread-1 (]: Began compiling node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:30.807792 [debug] [Thread-1 (]: Writing injected SQL for node "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m03:00:30.808574 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (compile): 03:00:30.793581 => 03:00:30.808305
+[0m03:00:30.809046 [debug] [Thread-1 (]: Began executing node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:30.821585 [debug] [Thread-1 (]: Writing runtime sql for node "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m03:00:30.822275 [debug] [Thread-1 (]: Using postgres connection "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m03:00:30.822758 [debug] [Thread-1 (]: On test.athens_dbt.not_null_data_clean_speed.6420e7ff73: BEGIN
+[0m03:00:30.823259 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:00:30.832606 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:30.833130 [debug] [Thread-1 (]: Using postgres connection "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m03:00:30.833600 [debug] [Thread-1 (]: On test.athens_dbt.not_null_data_clean_speed.6420e7ff73: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "node_id": "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select speed
+from "drone_traffic"."athens_table"."data_clean"
+where speed is null
+
+
+
+      
+    ) dbt_internal_test
+[0m03:00:30.834972 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m03:00:30.836812 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (execute): 03:00:30.809386 => 03:00:30.836568
+[0m03:00:30.837309 [debug] [Thread-1 (]: On test.athens_dbt.not_null_data_clean_speed.6420e7ff73: ROLLBACK
+[0m03:00:30.837931 [debug] [Thread-1 (]: On test.athens_dbt.not_null_data_clean_speed.6420e7ff73: Close
+[0m03:00:30.838918 [info ] [Thread-1 (]: 1 of 1 PASS not_null_data_clean_speed .......................................... [[32mPASS[0m in 0.05s]
+[0m03:00:30.839706 [debug] [Thread-1 (]: Finished running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:30.841381 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.841811 [debug] [MainThread]: On master: BEGIN
+[0m03:00:30.842189 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:00:30.851483 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:30.851975 [debug] [MainThread]: On master: COMMIT
+[0m03:00:30.852385 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:30.852784 [debug] [MainThread]: On master: COMMIT
+[0m03:00:30.853349 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m03:00:30.853766 [debug] [MainThread]: On master: Close
+[0m03:00:30.854593 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:00:30.854992 [debug] [MainThread]: Connection 'test.athens_dbt.not_null_data_clean_speed.6420e7ff73' was properly closed.
+[0m03:00:30.855486 [info ] [MainThread]: 
+[0m03:00:30.855961 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m03:00:30.856705 [debug] [MainThread]: Command end result
+[0m03:00:30.863493 [info ] [MainThread]: 
+[0m03:00:30.864047 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:00:30.864546 [info ] [MainThread]: 
+[0m03:00:30.865068 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m03:00:30.865925 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.47523525, "process_user_time": 1.86312, "process_kernel_time": 0.123411, "process_mem_max_rss": "147400", "process_out_blocks": "1648", "process_in_blocks": "0"}
+[0m03:00:30.866525 [debug] [MainThread]: Command `dbt test` succeeded at 03:00:30.866377 after 0.48 seconds
+[0m03:00:30.867006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbce1d68cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbcdd7cd1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbce1ced650>]}
+[0m03:00:30.867629 [debug] [MainThread]: Flushing usage events
+[0m03:00:36.563841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e5bff310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e5ed5190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e5bf1fd0>]}
+
+
+============================== 03:00:36.566246 | 1c9d59fe-b81a-4f3f-b356-9b03f47b31d2 ==============================
+[0m03:00:36.566246 [info ] [MainThread]: Running with dbt=1.7.13
+[0m03:00:36.566965 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/jabez/Documents/athens_traffic/transformations/logs', 'fail_fast': 'False', 'profiles_dir': '/home/jabez/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:00:36.717153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e5978f90>]}
+[0m03:00:36.789766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e661c0d0>]}
+[0m03:00:36.790554 [info ] [MainThread]: Registered adapter: postgres=1.7.13
+[0m03:00:36.796425 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m03:00:36.833746 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:00:36.834236 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:00:36.839105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e59a6150>]}
+[0m03:00:36.840853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e5785d50>]}
+[0m03:00:36.841410 [info ] [MainThread]: Found 10 models, 1 test, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:00:36.841911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e8a090d0>]}
+[0m03:00:36.843550 [info ] [MainThread]: 
+[0m03:00:36.844693 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m03:00:36.846245 [debug] [ThreadPool]: Acquiring new postgres connection 'list_drone_traffic_athens_table'
+[0m03:00:36.855406 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:36.855883 [debug] [ThreadPool]: On list_drone_traffic_athens_table: BEGIN
+[0m03:00:36.856312 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:00:36.866714 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:36.867286 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m03:00:36.867766 [debug] [ThreadPool]: On list_drone_traffic_athens_table: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "list_drone_traffic_athens_table"} */
+select
+      'drone_traffic' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'athens_table'
+  
+[0m03:00:36.870498 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.0 seconds
+[0m03:00:36.872004 [debug] [ThreadPool]: On list_drone_traffic_athens_table: ROLLBACK
+[0m03:00:36.872633 [debug] [ThreadPool]: On list_drone_traffic_athens_table: Close
+[0m03:00:36.880462 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:36.880932 [debug] [MainThread]: On master: BEGIN
+[0m03:00:36.881368 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:00:36.890740 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:36.891259 [debug] [MainThread]: Using postgres connection "master"
+[0m03:00:36.891781 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:00:36.908638 [debug] [MainThread]: SQL status: SELECT 9 in 0.0 seconds
+[0m03:00:36.911912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c9d59fe-b81a-4f3f-b356-9b03f47b31d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e8d71410>]}
+[0m03:00:36.912429 [debug] [MainThread]: On master: ROLLBACK
+[0m03:00:36.913051 [debug] [MainThread]: On master: Close
+[0m03:00:36.913958 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:00:36.914447 [info ] [MainThread]: 
+[0m03:00:36.917043 [debug] [Thread-1 (]: Began running node model.athens_dbt.data_clean
+[0m03:00:36.917781 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_drone_traffic_athens_table, now model.athens_dbt.data_clean)
+[0m03:00:36.918273 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.data_clean
+[0m03:00:36.923782 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.data_clean"
+[0m03:00:36.924460 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (compile): 03:00:36.918562 => 03:00:36.924212
+[0m03:00:36.924913 [debug] [Thread-1 (]: Began executing node model.athens_dbt.data_clean
+[0m03:00:36.925440 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (execute): 03:00:36.925197 => 03:00:36.925207
+[0m03:00:36.926369 [debug] [Thread-1 (]: Finished running node model.athens_dbt.data_clean
+[0m03:00:36.927524 [debug] [Thread-1 (]: Began running node model.athens_dbt.bus
+[0m03:00:36.928189 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.data_clean, now model.athens_dbt.bus)
+[0m03:00:36.928629 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.bus
+[0m03:00:36.931016 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.bus"
+[0m03:00:36.931724 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (compile): 03:00:36.928904 => 03:00:36.931487
+[0m03:00:36.932150 [debug] [Thread-1 (]: Began executing node model.athens_dbt.bus
+[0m03:00:36.932651 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (execute): 03:00:36.932424 => 03:00:36.932431
+[0m03:00:36.933492 [debug] [Thread-1 (]: Finished running node model.athens_dbt.bus
+[0m03:00:36.934000 [debug] [Thread-1 (]: Began running node model.athens_dbt.cars
+[0m03:00:36.934671 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.bus, now model.athens_dbt.cars)
+[0m03:00:36.935180 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.cars
+[0m03:00:36.937552 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.cars"
+[0m03:00:36.938358 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (compile): 03:00:36.935497 => 03:00:36.938111
+[0m03:00:36.938790 [debug] [Thread-1 (]: Began executing node model.athens_dbt.cars
+[0m03:00:36.939366 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (execute): 03:00:36.939064 => 03:00:36.939071
+[0m03:00:36.940211 [debug] [Thread-1 (]: Finished running node model.athens_dbt.cars
+[0m03:00:36.940718 [debug] [Thread-1 (]: Began running node model.athens_dbt.heavy_veh
+[0m03:00:36.941385 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.cars, now model.athens_dbt.heavy_veh)
+[0m03:00:36.941865 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.heavy_veh
+[0m03:00:36.944207 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.heavy_veh"
+[0m03:00:36.944959 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (compile): 03:00:36.942136 => 03:00:36.944721
+[0m03:00:36.945410 [debug] [Thread-1 (]: Began executing node model.athens_dbt.heavy_veh
+[0m03:00:36.946146 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (execute): 03:00:36.945687 => 03:00:36.945694
+[0m03:00:36.947009 [debug] [Thread-1 (]: Finished running node model.athens_dbt.heavy_veh
+[0m03:00:36.947645 [debug] [Thread-1 (]: Began running node model.athens_dbt.medium_veh
+[0m03:00:36.948383 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.heavy_veh, now model.athens_dbt.medium_veh)
+[0m03:00:36.948913 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.medium_veh
+[0m03:00:36.951008 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.medium_veh"
+[0m03:00:36.951732 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (compile): 03:00:36.949195 => 03:00:36.951487
+[0m03:00:36.952209 [debug] [Thread-1 (]: Began executing node model.athens_dbt.medium_veh
+[0m03:00:36.952720 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (execute): 03:00:36.952487 => 03:00:36.952493
+[0m03:00:36.953558 [debug] [Thread-1 (]: Finished running node model.athens_dbt.medium_veh
+[0m03:00:36.954070 [debug] [Thread-1 (]: Began running node model.athens_dbt.motorcycle
+[0m03:00:36.954766 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.medium_veh, now model.athens_dbt.motorcycle)
+[0m03:00:36.955340 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.motorcycle
+[0m03:00:36.957599 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.motorcycle"
+[0m03:00:36.958242 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (compile): 03:00:36.955624 => 03:00:36.957997
+[0m03:00:36.958719 [debug] [Thread-1 (]: Began executing node model.athens_dbt.motorcycle
+[0m03:00:36.959294 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (execute): 03:00:36.958997 => 03:00:36.959003
+[0m03:00:36.960126 [debug] [Thread-1 (]: Finished running node model.athens_dbt.motorcycle
+[0m03:00:36.960634 [debug] [Thread-1 (]: Began running node model.athens_dbt.stopped_veh
+[0m03:00:36.961348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.motorcycle, now model.athens_dbt.stopped_veh)
+[0m03:00:36.961803 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.stopped_veh
+[0m03:00:36.964171 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.stopped_veh"
+[0m03:00:36.964816 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (compile): 03:00:36.962082 => 03:00:36.964570
+[0m03:00:36.965295 [debug] [Thread-1 (]: Began executing node model.athens_dbt.stopped_veh
+[0m03:00:36.965807 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (execute): 03:00:36.965573 => 03:00:36.965579
+[0m03:00:36.966634 [debug] [Thread-1 (]: Finished running node model.athens_dbt.stopped_veh
+[0m03:00:36.967170 [debug] [Thread-1 (]: Began running node model.athens_dbt.taxi
+[0m03:00:36.967876 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.stopped_veh, now model.athens_dbt.taxi)
+[0m03:00:36.968464 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.taxi
+[0m03:00:36.970699 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.taxi"
+[0m03:00:36.971440 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (compile): 03:00:36.968749 => 03:00:36.971114
+[0m03:00:36.971904 [debug] [Thread-1 (]: Began executing node model.athens_dbt.taxi
+[0m03:00:36.972418 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (execute): 03:00:36.972185 => 03:00:36.972192
+[0m03:00:36.973255 [debug] [Thread-1 (]: Finished running node model.athens_dbt.taxi
+[0m03:00:36.973764 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_speed
+[0m03:00:36.974486 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.taxi, now model.athens_dbt.veh_speed)
+[0m03:00:36.974933 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_speed
+[0m03:00:36.978172 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_speed"
+[0m03:00:36.978855 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (compile): 03:00:36.975275 => 03:00:36.978609
+[0m03:00:36.979363 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_speed
+[0m03:00:36.979867 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (execute): 03:00:36.979636 => 03:00:36.979641
+[0m03:00:36.980695 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_speed
+[0m03:00:36.981203 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_type
+[0m03:00:36.981903 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.veh_speed, now model.athens_dbt.veh_type)
+[0m03:00:36.982353 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_type
+[0m03:00:36.984596 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_type"
+[0m03:00:36.985236 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (compile): 03:00:36.982632 => 03:00:36.984991
+[0m03:00:36.985722 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_type
+[0m03:00:36.986233 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (execute): 03:00:36.986001 => 03:00:36.986006
+[0m03:00:36.987047 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_type
+[0m03:00:36.987641 [debug] [Thread-1 (]: Began running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:36.988362 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.veh_type, now test.athens_dbt.not_null_data_clean_speed.6420e7ff73)
+[0m03:00:36.988828 [debug] [Thread-1 (]: Began compiling node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:36.998488 [debug] [Thread-1 (]: Writing injected SQL for node "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m03:00:36.999230 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (compile): 03:00:36.989108 => 03:00:36.998933
+[0m03:00:36.999729 [debug] [Thread-1 (]: Began executing node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:37.000252 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (execute): 03:00:37.000013 => 03:00:37.000018
+[0m03:00:37.001095 [debug] [Thread-1 (]: Finished running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m03:00:37.002368 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:00:37.002759 [debug] [MainThread]: Connection 'test.athens_dbt.not_null_data_clean_speed.6420e7ff73' was properly closed.
+[0m03:00:37.004483 [debug] [MainThread]: Command end result
+[0m03:00:37.017341 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m03:00:37.017772 [info ] [MainThread]: Building catalog
+[0m03:00:37.020287 [debug] [ThreadPool]: Acquiring new postgres connection 'drone_traffic.information_schema'
+[0m03:00:37.026431 [debug] [ThreadPool]: Using postgres connection "drone_traffic.information_schema"
+[0m03:00:37.026877 [debug] [ThreadPool]: On drone_traffic.information_schema: BEGIN
+[0m03:00:37.027320 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:00:37.036645 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m03:00:37.037112 [debug] [ThreadPool]: Using postgres connection "drone_traffic.information_schema"
+[0m03:00:37.037631 [debug] [ThreadPool]: On drone_traffic.information_schema: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "drone_traffic.information_schema"} */
+
+    
+    
+
+    select
+        'drone_traffic' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('bus')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('veh_type')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('motorcycle')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('veh_speed')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('data_clean')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('cars')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('stopped_veh')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('medium_veh')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('taxi')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('heavy_veh')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m03:00:37.040954 [debug] [ThreadPool]: SQL status: SELECT 77 in 0.0 seconds
+[0m03:00:37.045475 [debug] [ThreadPool]: On drone_traffic.information_schema: ROLLBACK
+[0m03:00:37.046114 [debug] [ThreadPool]: On drone_traffic.information_schema: Close
+[0m03:00:37.057167 [info ] [MainThread]: Catalog written to /home/jabez/Documents/athens_traffic/transformations/target/catalog.json
+[0m03:00:37.058199 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.5283927, "process_user_time": 1.940546, "process_kernel_time": 0.087663, "process_mem_max_rss": "147404", "process_out_blocks": "4744", "process_in_blocks": "0"}
+[0m03:00:37.058845 [debug] [MainThread]: Command `dbt docs generate` succeeded at 03:00:37.058694 after 0.53 seconds
+[0m03:00:37.059342 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m03:00:37.059730 [debug] [MainThread]: Connection 'drone_traffic.information_schema' was properly closed.
+[0m03:00:37.060174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4ea380410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4e57f7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f4ea4e9b90>]}
+[0m03:00:37.060647 [debug] [MainThread]: Flushing usage events
+[0m14:48:29.097333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c301bf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c301b790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c301bdd0>]}
+
+
+============================== 14:48:29.132015 | cad47005-5b20-493b-82c2-362b3eb70231 ==============================
+[0m14:48:29.132015 [info ] [MainThread]: Running with dbt=1.7.13
+[0m14:48:29.132947 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jabez/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/jabez/Documents/athens_traffic/transformations/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:48:29.489069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c300e450>]}
+[0m14:48:29.576301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c2bf83d0>]}
+[0m14:48:29.577497 [info ] [MainThread]: Registered adapter: postgres=1.7.13
+[0m14:48:29.584912 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m14:48:29.856615 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:48:29.857772 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:48:29.868307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c2b61bd0>]}
+[0m14:48:29.870934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c299d850>]}
+[0m14:48:29.871624 [info ] [MainThread]: Found 10 models, 1 test, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m14:48:29.872220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c2beda10>]}
+[0m14:48:29.874304 [info ] [MainThread]: 
+[0m14:48:29.875391 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:48:29.877116 [debug] [ThreadPool]: Acquiring new postgres connection 'list_drone_traffic_athens_table'
+[0m14:48:29.895158 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m14:48:29.895832 [debug] [ThreadPool]: On list_drone_traffic_athens_table: BEGIN
+[0m14:48:29.896224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:48:29.916043 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:48:29.916512 [debug] [ThreadPool]: Using postgres connection "list_drone_traffic_athens_table"
+[0m14:48:29.916932 [debug] [ThreadPool]: On list_drone_traffic_athens_table: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "list_drone_traffic_athens_table"} */
+select
+      'drone_traffic' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'athens_table'
+    union all
+    select
+      'drone_traffic' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'athens_table'
+  
+[0m14:48:30.059581 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.0 seconds
+[0m14:48:30.065397 [debug] [ThreadPool]: On list_drone_traffic_athens_table: ROLLBACK
+[0m14:48:30.067661 [debug] [ThreadPool]: On list_drone_traffic_athens_table: Close
+[0m14:48:30.080437 [debug] [MainThread]: Using postgres connection "master"
+[0m14:48:30.080885 [debug] [MainThread]: On master: BEGIN
+[0m14:48:30.081277 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:48:30.090815 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:48:30.091296 [debug] [MainThread]: Using postgres connection "master"
+[0m14:48:30.091879 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:48:30.254481 [debug] [MainThread]: SQL status: SELECT 9 in 0.0 seconds
+[0m14:48:30.260039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cad47005-5b20-493b-82c2-362b3eb70231', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c2b83a90>]}
+[0m14:48:30.260540 [debug] [MainThread]: On master: ROLLBACK
+[0m14:48:30.261217 [debug] [MainThread]: On master: Close
+[0m14:48:30.262078 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:48:30.262723 [info ] [MainThread]: 
+[0m14:48:30.266029 [debug] [Thread-1 (]: Began running node model.athens_dbt.data_clean
+[0m14:48:30.266779 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_drone_traffic_athens_table, now model.athens_dbt.data_clean)
+[0m14:48:30.267231 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.data_clean
+[0m14:48:30.273614 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.data_clean"
+[0m14:48:30.274723 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (compile): 14:48:30.267560 => 14:48:30.274210
+[0m14:48:30.275713 [debug] [Thread-1 (]: Began executing node model.athens_dbt.data_clean
+[0m14:48:30.277048 [debug] [Thread-1 (]: Timing info for model.athens_dbt.data_clean (execute): 14:48:30.276341 => 14:48:30.276401
+[0m14:48:30.278583 [debug] [Thread-1 (]: Finished running node model.athens_dbt.data_clean
+[0m14:48:30.280141 [debug] [Thread-1 (]: Began running node model.athens_dbt.bus
+[0m14:48:30.281508 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.data_clean, now model.athens_dbt.bus)
+[0m14:48:30.282370 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.bus
+[0m14:48:30.285474 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.bus"
+[0m14:48:30.286170 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (compile): 14:48:30.282886 => 14:48:30.285924
+[0m14:48:30.286599 [debug] [Thread-1 (]: Began executing node model.athens_dbt.bus
+[0m14:48:30.287109 [debug] [Thread-1 (]: Timing info for model.athens_dbt.bus (execute): 14:48:30.286873 => 14:48:30.286884
+[0m14:48:30.288249 [debug] [Thread-1 (]: Finished running node model.athens_dbt.bus
+[0m14:48:30.289177 [debug] [Thread-1 (]: Began running node model.athens_dbt.cars
+[0m14:48:30.290814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.bus, now model.athens_dbt.cars)
+[0m14:48:30.292025 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.cars
+[0m14:48:30.295425 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.cars"
+[0m14:48:30.296229 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (compile): 14:48:30.292615 => 14:48:30.295981
+[0m14:48:30.296658 [debug] [Thread-1 (]: Began executing node model.athens_dbt.cars
+[0m14:48:30.297160 [debug] [Thread-1 (]: Timing info for model.athens_dbt.cars (execute): 14:48:30.296928 => 14:48:30.296937
+[0m14:48:30.298031 [debug] [Thread-1 (]: Finished running node model.athens_dbt.cars
+[0m14:48:30.298593 [debug] [Thread-1 (]: Began running node model.athens_dbt.heavy_veh
+[0m14:48:30.299500 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.cars, now model.athens_dbt.heavy_veh)
+[0m14:48:30.299996 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.heavy_veh
+[0m14:48:30.302445 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.heavy_veh"
+[0m14:48:30.303391 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (compile): 14:48:30.300276 => 14:48:30.302936
+[0m14:48:30.303982 [debug] [Thread-1 (]: Began executing node model.athens_dbt.heavy_veh
+[0m14:48:30.305404 [debug] [Thread-1 (]: Timing info for model.athens_dbt.heavy_veh (execute): 14:48:30.304260 => 14:48:30.304272
+[0m14:48:30.307862 [debug] [Thread-1 (]: Finished running node model.athens_dbt.heavy_veh
+[0m14:48:30.308625 [debug] [Thread-1 (]: Began running node model.athens_dbt.medium_veh
+[0m14:48:30.309440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.heavy_veh, now model.athens_dbt.medium_veh)
+[0m14:48:30.310005 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.medium_veh
+[0m14:48:30.312703 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.medium_veh"
+[0m14:48:30.313519 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (compile): 14:48:30.310284 => 14:48:30.313236
+[0m14:48:30.314009 [debug] [Thread-1 (]: Began executing node model.athens_dbt.medium_veh
+[0m14:48:30.314532 [debug] [Thread-1 (]: Timing info for model.athens_dbt.medium_veh (execute): 14:48:30.314275 => 14:48:30.314281
+[0m14:48:30.315480 [debug] [Thread-1 (]: Finished running node model.athens_dbt.medium_veh
+[0m14:48:30.315974 [debug] [Thread-1 (]: Began running node model.athens_dbt.motorcycle
+[0m14:48:30.316658 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.medium_veh, now model.athens_dbt.motorcycle)
+[0m14:48:30.317115 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.motorcycle
+[0m14:48:30.319634 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.motorcycle"
+[0m14:48:30.320339 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (compile): 14:48:30.317385 => 14:48:30.320074
+[0m14:48:30.320854 [debug] [Thread-1 (]: Began executing node model.athens_dbt.motorcycle
+[0m14:48:30.321462 [debug] [Thread-1 (]: Timing info for model.athens_dbt.motorcycle (execute): 14:48:30.321134 => 14:48:30.321141
+[0m14:48:30.322640 [debug] [Thread-1 (]: Finished running node model.athens_dbt.motorcycle
+[0m14:48:30.323494 [debug] [Thread-1 (]: Began running node model.athens_dbt.stopped_veh
+[0m14:48:30.324160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.motorcycle, now model.athens_dbt.stopped_veh)
+[0m14:48:30.324722 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.stopped_veh
+[0m14:48:30.327381 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.stopped_veh"
+[0m14:48:30.328252 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (compile): 14:48:30.325063 => 14:48:30.327863
+[0m14:48:30.328737 [debug] [Thread-1 (]: Began executing node model.athens_dbt.stopped_veh
+[0m14:48:30.329256 [debug] [Thread-1 (]: Timing info for model.athens_dbt.stopped_veh (execute): 14:48:30.329005 => 14:48:30.329014
+[0m14:48:30.330125 [debug] [Thread-1 (]: Finished running node model.athens_dbt.stopped_veh
+[0m14:48:30.330653 [debug] [Thread-1 (]: Began running node model.athens_dbt.taxi
+[0m14:48:30.331307 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.stopped_veh, now model.athens_dbt.taxi)
+[0m14:48:30.331932 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.taxi
+[0m14:48:30.334477 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.taxi"
+[0m14:48:30.335341 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (compile): 14:48:30.332428 => 14:48:30.334962
+[0m14:48:30.335858 [debug] [Thread-1 (]: Began executing node model.athens_dbt.taxi
+[0m14:48:30.336384 [debug] [Thread-1 (]: Timing info for model.athens_dbt.taxi (execute): 14:48:30.336113 => 14:48:30.336122
+[0m14:48:30.337231 [debug] [Thread-1 (]: Finished running node model.athens_dbt.taxi
+[0m14:48:30.337819 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_speed
+[0m14:48:30.338726 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.taxi, now model.athens_dbt.veh_speed)
+[0m14:48:30.339399 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_speed
+[0m14:48:30.342723 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_speed"
+[0m14:48:30.343573 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (compile): 14:48:30.339690 => 14:48:30.343151
+[0m14:48:30.344051 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_speed
+[0m14:48:30.344572 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_speed (execute): 14:48:30.344303 => 14:48:30.344310
+[0m14:48:30.345419 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_speed
+[0m14:48:30.345943 [debug] [Thread-1 (]: Began running node model.athens_dbt.veh_type
+[0m14:48:30.346669 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.veh_speed, now model.athens_dbt.veh_type)
+[0m14:48:30.347139 [debug] [Thread-1 (]: Began compiling node model.athens_dbt.veh_type
+[0m14:48:30.349444 [debug] [Thread-1 (]: Writing injected SQL for node "model.athens_dbt.veh_type"
+[0m14:48:30.350245 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (compile): 14:48:30.347478 => 14:48:30.349853
+[0m14:48:30.350733 [debug] [Thread-1 (]: Began executing node model.athens_dbt.veh_type
+[0m14:48:30.351252 [debug] [Thread-1 (]: Timing info for model.athens_dbt.veh_type (execute): 14:48:30.350984 => 14:48:30.350991
+[0m14:48:30.352158 [debug] [Thread-1 (]: Finished running node model.athens_dbt.veh_type
+[0m14:48:30.352681 [debug] [Thread-1 (]: Began running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m14:48:30.353404 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.athens_dbt.veh_type, now test.athens_dbt.not_null_data_clean_speed.6420e7ff73)
+[0m14:48:30.353875 [debug] [Thread-1 (]: Began compiling node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m14:48:30.363661 [debug] [Thread-1 (]: Writing injected SQL for node "test.athens_dbt.not_null_data_clean_speed.6420e7ff73"
+[0m14:48:30.364528 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (compile): 14:48:30.354135 => 14:48:30.364108
+[0m14:48:30.365067 [debug] [Thread-1 (]: Began executing node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m14:48:30.365606 [debug] [Thread-1 (]: Timing info for test.athens_dbt.not_null_data_clean_speed.6420e7ff73 (execute): 14:48:30.365329 => 14:48:30.365337
+[0m14:48:30.366458 [debug] [Thread-1 (]: Finished running node test.athens_dbt.not_null_data_clean_speed.6420e7ff73
+[0m14:48:30.367553 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:48:30.367938 [debug] [MainThread]: Connection 'test.athens_dbt.not_null_data_clean_speed.6420e7ff73' was properly closed.
+[0m14:48:30.369731 [debug] [MainThread]: Command end result
+[0m14:48:30.393611 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m14:48:30.395121 [info ] [MainThread]: Building catalog
+[0m14:48:30.404524 [debug] [ThreadPool]: Acquiring new postgres connection 'drone_traffic.information_schema'
+[0m14:48:30.426143 [debug] [ThreadPool]: Using postgres connection "drone_traffic.information_schema"
+[0m14:48:30.427205 [debug] [ThreadPool]: On drone_traffic.information_schema: BEGIN
+[0m14:48:30.427962 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:48:30.441691 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:48:30.442651 [debug] [ThreadPool]: Using postgres connection "drone_traffic.information_schema"
+[0m14:48:30.444047 [debug] [ThreadPool]: On drone_traffic.information_schema: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "athens_dbt", "target_name": "dev", "connection_name": "drone_traffic.information_schema"} */
+
+    
+    
+
+    select
+        'drone_traffic' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('stopped_veh')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('cars')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('veh_speed')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('veh_type')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('data_clean')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('medium_veh')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('heavy_veh')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('motorcycle')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('bus')) or (upper(sch.nspname) = upper('athens_table') and
+           upper(tbl.relname) = upper('taxi')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m14:48:30.537851 [debug] [ThreadPool]: SQL status: SELECT 77 in 0.0 seconds
+[0m14:48:30.555483 [debug] [ThreadPool]: On drone_traffic.information_schema: ROLLBACK
+[0m14:48:30.557516 [debug] [ThreadPool]: On drone_traffic.information_schema: Close
+[0m14:48:30.598096 [info ] [MainThread]: Catalog written to /home/jabez/Documents/athens_traffic/transformations/target/catalog.json
+[0m14:48:30.601288 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 1.5383705, "process_user_time": 2.516952, "process_kernel_time": 0.275999, "process_mem_max_rss": "114228", "process_in_blocks": "84464", "process_out_blocks": "4752"}
+[0m14:48:30.602607 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:48:30.602281 after 1.54 seconds
+[0m14:48:30.603456 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:48:30.604261 [debug] [MainThread]: Connection 'drone_traffic.information_schema' was properly closed.
+[0m14:48:30.605203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c3025f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c3026bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c19c78a98d0>]}
+[0m14:48:30.606323 [debug] [MainThread]: Flushing usage events
